@@ -1,0 +1,88 @@
+title Ant Group Strategy
+market anywhere [0.90, 0.63]
+market daily life [0.90, 0.82]
+
+anchor small business [0.97, 0.54]
+anchor underserved [0.97, 0.77]
+anchor financial partners [0.87, 0.29]
+component investors [0.25, 0.12] inertia
+small business->anywhere
+underserved->anywhere
+financial partners->anywhere
+
+
+component financing [0.72, 0.60] label [5, -10]
+component investment advisory service [0.72, 0.47] label [12, -19]
+component digital payments [0.82, 0.72] 
+component investment tech [0.46, 0.61] label [13, -18]
+component credit tech [0.45, 0.48] label [-74, 2]
+component data insights [0.36, 0.46] label [-90, -1]
+component 3rd parties [0.78, 0.40]
+
+component transaction fees [0.73, 0.68] label [11, -14]
+component mobile app [0.64, 0.61]
+component risk management [0.57, 0.55] label [-64, -7]
+component intelligent decisioning [0.61, 0.43] label [-75, -3]
+component asset management [0.56, 0.70] label [5, -10]
+component AI [0.10, 0.45] label [-29, 3]
+component compute [0.07, 0.69] label [14, 2]
+
+note +alibaba partnership [0.04, 0.71]
+note (711M user/mo) [0.85, 0.74]
+note (80M) [0.97, 0.50]
+note (2000+) [0.89, 0.30]
+note +alibaba partnership [0.77, 0.75]
+component digital infrastructure [0.25, 0.42] label [37, -29]
+component blockchain solution [0.15, 0.33] label [-65, -17]
+merchants->digital payments
+alibaba->digital payments
+anywhere->digital payments
+intelligent decisioning->risk management
+risk management->asset management
+digital payments->transaction fees
+transaction fees->mobile app
+anywhere->financing
+financing->mobile app
+financial partners->3rd parties
+mobile app->intelligent decisioning
+mobile app->risk management
+mobile app->asset management
+asset management->investment tech
+risk management->credit tech
+intelligent decisioning->credit tech
+risk management->investment tech
+credit tech->investment tech
+credit tech->data insights
+investment tech->data insights
+investment advisory service->anywhere
+intelligent decisioning->investment advisory service
+data insights->digital infrastructure
+digital infrastructure->compute
+digital infrastructure->blockchain solution
+digital infrastructure->AI
+AI->compute
+investment advisory service->mobile app
+investment advisory service+'*'>mobile app
+
+
+investors+<digital infrastructure
+
+
+annotation 1 [0.93, 0.90] Bundling
+annotation 2 [0.67, 0.56] Network Effects
+annotation 3 [0.84, 0.39] Co-operation
+annotation 4 [0.20, 0.81] Industrialisation
+
+build digital infrastructure
+build mobile app
+
+evolve digital infrastructure 0.8 label [16, -34]
+evolve mobile app 0.8
+
+pipeline1 digital infrastructure [0.37, 0.9]
+pipeline anywhere [0.27, 0.92]
+note Settlers Mindset [0.29, 0.26]
+
+style colour
+settlers [0.32, 0.25, 0.05, 0.54]
+annotations [0.77, 0.01]

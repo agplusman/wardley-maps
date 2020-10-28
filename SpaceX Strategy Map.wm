@@ -1,0 +1,69 @@
+title SpaceX Strategy Map
+anchor Customer [0.94, 0.59]
+anchor Consumer [0.89, 0.77]
+component Launches [0.87, 0.56] label [-68, 3]
+component Satellites [0.73, 0.62] label [9, 5]
+Customer->Launches
+Consumer->Internet
+Launches->Satellites
+component Crew [0.79, 0.47] label [-41, -3]
+Launches->Crew
+Crew->Rideshare
+component Cargo [0.67, 0.54] label [-42, -3]
+component Rideshare [0.55, 0.52] label [-72, 3]
+component Military [0.61, 0.58] label [9, 3]
+component Edge [0.50, 0.71] label [10, 4]
+component Internet [0.63, 0.66] label [11, 4]
+component IOT [0.58, 0.68] label [9, 4]
+component Compute [0.43, 0.72] label [10, 3]
+component Colonization [0.62, 0.13] label [-83, 4]
+component Reuse [0.23, 0.42] inertia label [-52, -2]
+component Factories [0.47, 0.08] label [-48, -9]
+component Mining [0.35, 0.03] label [-22, 18]
+component Latency [0.36, 0.59] inertia label [-56, 2]
+component Tourism [0.68, 0.39] label [11, 5]
+component R&D [0.05, 0.32] label [-36, 6]
+R&D->Reuse
+R&D->Colonization
+evolve Latency 0.8 label [12, 4]
+evolve Reuse 0.92 label [0, 20]
+evolve Colonization 0.3 label [13, 5]
+evolve Factories 0.4
+'pipeline Launches [0.80, 0.58]
+Launches->Reuse
+Colonization->Crew
+Colonization->Factories
+Factories->Mining
+Crew->Tourism
+Launches->Cargo
+Launches->Military
+Cargo->Rideshare
+Satellites->Internet
+Internet->IOT
+IOT->Edge
+Edge->Compute
+Compute->Latency
+Satellites->Military
+Cargo->Satellites
+Rideshare->Military
+Launches+'Outcome Contracting'<>Reuse
+Mining+>Factories
+note Longer Timeframe [0.40, 0.17]
+Compute+>Latency
+pioneers [0.66, 0.01, 0.46, 0.21]
+note Pioneers [0.67, 0.04]
+note +Coverage [0.33, 0.53]
+note +Coverage [0.33, 0.81]
+pipeline Reuse [0.36, 0.86]
+annotation 1 [0.20, 0.64] Reuse pipeline creates 70% Gross Margins
+annotation 2 [0.33, 0.73] Latency laws (Shannon Limits) and coverage
+
+
+note Customers are Enterprise,  [0.97, 0.63]
+note and Public sector [0.95, 0.63]
+
+note Consumers are users of  [0.88, 0.79]
+note low latency internet connectivty [0.86, 0.79]
+note authored agplusman@gmail.com [0.01, 0.72]
+style colour
+annotations [0.86, 0.02]
