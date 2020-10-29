@@ -18,7 +18,8 @@ component investment tech [0.46, 0.61] label [13, -18]
 component credit tech [0.45, 0.48] label [-74, 2]
 component data insights [0.36, 0.46] label [-90, -1]
 component 3rd parties [0.78, 0.40]
-component Digital Yuan [0.95, 0.20]
+component Digital Yuan [0.96, 0.21] 
+evolve Digital Yuan 0.90
 
 component transaction fees [0.73, 0.68] label [11, -14]
 component mobile app [0.64, 0.61]
