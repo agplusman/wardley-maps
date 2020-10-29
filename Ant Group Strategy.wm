@@ -18,6 +18,7 @@ component investment tech [0.46, 0.61] label [13, -18]
 component credit tech [0.45, 0.48] label [-74, 2]
 component data insights [0.36, 0.46] label [-90, -1]
 component 3rd parties [0.78, 0.40]
+component Digital Yuan [0.95, 0.20]
 
 component transaction fees [0.73, 0.68] label [11, -14]
 component mobile app [0.64, 0.61]
@@ -34,6 +35,7 @@ note (2000+) [0.89, 0.30]
 note +alibaba partnership [0.77, 0.75]
 component digital infrastructure [0.25, 0.42] label [37, -29]
 component blockchain solution [0.15, 0.33] label [-65, -17]
+Digital Yuan->anywhere
 merchants->digital payments
 alibaba->digital payments
 anywhere->digital payments
