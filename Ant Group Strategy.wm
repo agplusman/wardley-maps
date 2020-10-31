@@ -9,7 +9,7 @@ component investors [0.25, 0.12] inertia
 small business->anywhere
 underserved->anywhere
 financial partners->anywhere
-
+//a comment
 
 component financing [0.72, 0.60] label [5, -10]
 component investment advisory service [0.72, 0.47] label [12, -19]
