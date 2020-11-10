@@ -99,6 +99,6 @@ note visual builders [0.45, 0.70]
 style colour
 //market hello [0.9, 0.1]
 
-annotations [0.12, 0.01]
+annotations [0.08, 0.02]
 townplanners [0.38, 0.47, 0.02, 0.95]
 settlers [0.48, 0.25, 0.38, 0.8]
