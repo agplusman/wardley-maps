@@ -4,7 +4,7 @@ market daily life [0.90, 0.82]
 
 anchor small business [0.97, 0.54]
 anchor underserved [0.97, 0.77]
-anchor financial partners [0.87, 0.29]
+anchor financial partners [0.87, 0.28]
 component investors [0.25, 0.12] inertia
 small business->anywhere
 underserved->anywhere
